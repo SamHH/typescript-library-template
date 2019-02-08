@@ -1,0 +1,43 @@
+{
+	"name": "typescript-library-template",
+	"version": "0.1.0",
+	"description": "TypeScript library template.",
+	"author": "Sam A. Horvath-Hunt <git@samhh.com> (https://samhh.com)",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/SamHH/typescript-library-template.git"
+	},
+	"license": "MIT",
+	"sideEffects": false,
+	"files": [
+		"./dist/"
+	],
+	"scripts": {
+		"build": "rm -rf ./dist/ && tsc",
+		"test": "jest",
+		"test-watch": "jest -w",
+		"lint": "eslint ./src/ --ext ts"
+	},
+	"peerDependencies": {},
+	"dependencies": {},
+	"devDependencies": {
+		"@types/jest": "^23.0.0",
+		"@typescript-eslint/eslint-plugin": "^1.3.0",
+		"@typescript-eslint/parser": "^1.3.0",
+		"eslint": "^5.13.0",
+		"jest": "^23.0.0",
+		"ts-jest": "^23.10.5",
+		"typescript": "^3.3.3"
+	},
+	"jest": {
+		"transform": {
+			"^.+\\.ts$": "ts-jest"
+		},
+		"testRegex": "/tests/.+\\.test.ts$",
+		"moduleFileExtensions": [
+			"js",
+			"ts",
+			"tsx"
+		]
+	}
+}
